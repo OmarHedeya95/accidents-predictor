@@ -2,20 +2,9 @@ import requests
 import json
 import pandas as pd
 
-url = 'http://0.0.0.0:5000/api/'
+url = 'https://cloud-run-forrest-regressor-ovgf2pkzmq-ey.a.run.app'
 
-#data = [[2020, 10]]
-data = {"year":2020, "month":10}
-
-'''df = pd.DataFrame({
-                "Year": 2020,
-                "Month": 10
-
-                },
-                index = [0]      
-            )'''
-
-#data = [{"year": 2020}]
+data = {"year":2020, "month":2}
 
 j_data = json.dumps(data)
 print(j_data)
