@@ -13,5 +13,5 @@ Here we have a simply flask app that loads the trained model and listens to port
 ## request.py
 Simple script to send a POST request and get a result
 
-##Docker
+## Docker
 The whole app is dockerized and deployed on google cloud
