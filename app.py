@@ -9,7 +9,7 @@ from numpy import ceil
 app = Flask(__name__)
 
 
-@app.route('/api/', methods=['POST'])
+@app.route('/', methods=['POST']) #/api/
 def makecalc():
     data = request.get_json()
 
@@ -28,4 +28,5 @@ def makecalc():
 if __name__ == '__main__':
     modelfile = 'models/regressor.joblib'
     model = joblib.load(modelfile)
-    app.run(debug=True, host='0.0.0.0')
+    #app.run(debug=True, host='0.0.0.0')
+    app.run(host='0.0.0.0', port=8080)
